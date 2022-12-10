@@ -37,6 +37,23 @@ if ( userLength >= 8 && userLength <= 128){
 console.log(userLength);
 
 
+// These confirm windows will let the user select which parameters wants to use in the password
+
+
+var confirmLowerCase = window.confirm ("Do you want to use lowercase?");
+var confirmUpperCase = window.confirm ("Do you want to use uppercase?");
+var confirmNumerical = window.confirm ("Do you want to use numerical?");
+var confirmSpecialCharacters = window.confirm ("Do you want to use special characters?");
+
+
+// This section validates if the user selected at least one parameter, if not it will take him back to the first length prompt
+
+
+if(confirmLowerCase === false && confirmUpperCase === false && confirmNumerical === false && confirmSpecialCharacters === false) {
+  alert ("Your password has to have at least one parameter");
+  var userLength = parseInt (window.prompt ("Type the length of your password. Min 8 characters. Max 128 characters"));
+}
+
 
 
 
