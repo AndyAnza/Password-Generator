@@ -55,6 +55,32 @@ if(confirmLowerCase === false && confirmUpperCase === false && confirmNumerical 
 }
 
 
+// Here is where the selected char arrays will be joined together in the variable charsSelected
+
+
+var charsSelected = [];
+if (confirmLowerCase){
+  charsSelected.push(lowerCase);
+}
+if (confirmUpperCase) { 
+  charsSelected.push(upperCase) ;
+}
+if (confirmNumerical){
+  charsSelected.push(numerical) ;
+}
+if (confirmSpecialCharacters){
+  charsSelected.push(specialCharacters);
+}
+
+console.log(charsSelected);
+
+
+// The arrays inside charSelected will be joined in a single string in a new variable called charsSelectedJoined
+
+
+var charsSelectedJoined = charsSelected.join('');
+
+console.log(charsSelectedJoined)
 
 
 
