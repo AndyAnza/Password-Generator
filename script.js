@@ -84,15 +84,23 @@ console.log(charsSelectedJoined)
 
 
 
+// Here is where the password is generated
+
+var finalPassword= ''
+
+for (var i = 0; i < userLength; i++) {
+  var randomPassword = Math.floor(Math.random() * charsSelectedJoined.length);
+  finalPassword += charsSelectedJoined.charAt(randomPassword);
+} console.log(randomPassword)
 
 
+  return finalPassword;
+}
+
+// Write password to the #password input
 
 
-
-
-
-
-
+function writePassword() {
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
 
