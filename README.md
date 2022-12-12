@@ -1,5 +1,8 @@
 # Password-Generator
 
+## Description
+ 
+## Technical
 
 ## Usage
 
