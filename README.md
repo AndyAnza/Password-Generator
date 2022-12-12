@@ -11,4 +11,4 @@ https://andyanza.github.io/Password-Generator/
 
 
 
-![alt text](assets/andyanza.github.io_Password-Generator_.png)
+![alt text](Assets/andyanza.github.io_Password-Generator_.png)
